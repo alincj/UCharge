@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task_planner_app/widgets/back_button.dart';
 
-class Perfil extends StatelessWidget {
+class Logo_And_Back extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     Size size = MediaQuery.of(context).size;

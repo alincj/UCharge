@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_task_planner_app/dates_list.dart';
 import 'package:flutter_task_planner_app/theme/colors/light_colors.dart';
 import 'package:flutter_task_planner_app/widgets/calendar_dates.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_task_planner_app/widgets/task_container.dart';
 import 'package:flutter_task_planner_app/screens/create_new_task_page.dart';
 import 'package:flutter_task_planner_app/widgets/back_button.dart';
@@ -113,7 +113,7 @@ class CalendarPage extends StatelessWidget {
               Expanded(
                 child: SingleChildScrollView(
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 20.0),
+                    padding: EdgeInsets.symmetric(vertical: 0.0),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task_planner_app/screens/calendar_page.dart';
+import 'package:flutter_task_planner_app/screens/login_screen.dart';
+import 'package:flutter_task_planner_app/screens/logo_and_back.dart';
 import 'package:flutter_task_planner_app/theme/colors/light_colors.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:flutter_task_planner_app/widgets/task_column.dart';
@@ -122,13 +124,78 @@ class HomePage extends StatelessWidget {
                                     ),
                                     onPressed: () {
                                         Navigator.push(context, MaterialPageRoute(
-                                          builder: (context) => CalendarPage()
+                                          builder: (context) => LoginScreen()
                                         ));
                                       },
 
                                      child: const Text('Fazer Registo'),
                     ),
                 ),
+                    Container(color: Colors.transparent,
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 100.0, vertical: 30.0),
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              padding: const EdgeInsets.all(16.0),
+                              primary: Colors.black,
+                              backgroundColor: Colors.white,
+                              textStyle: const TextStyle(fontSize: 20),
+                          ),
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => CalendarPage()
+                            ));
+                          },
+                          child: const Text('Google'),
+                          ),
+
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              padding: const EdgeInsets.all(16.0),
+                              //paddin: const EdgeInsets.all(9),
+                              primary: Colors.black,
+                              backgroundColor: Colors.white,
+                              textStyle: const TextStyle(fontSize: 20),
+                          ),
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => CalendarPage()
+                            ));
+                          },
+                          child: const Text('Facebook'),
+                          ),
+
+
+                        ]),
+
+                      ),
+
+
                     Container(
                       color: Colors.transparent,
                       padding: EdgeInsets.symmetric(
@@ -139,7 +206,7 @@ class HomePage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              subheading('My Tasks'),
+                              subheading('Já tens uma conta?'),
                               GestureDetector(
                                 onTap: () {
                                   Navigator.push(
