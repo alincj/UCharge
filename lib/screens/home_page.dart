@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             TopContainer(
-              height: 150,
+              height: 400,
               width: width,
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -62,55 +62,20 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-                          CircularPercentIndicator(
-                            radius: 95.0,
-                            lineWidth: 5.0,
-                            animation: true,
-                            percent: 0.75,
-                            circularStrokeCap: CircularStrokeCap.round,
-                            progressColor: LightColors.kBlue,
-                            backgroundColor: LightColors.kBlue,
-                            center: CircleAvatar(
+                          CircleAvatar(
                               backgroundColor: LightColors.kLavender,
                               radius: 100.0,
                               backgroundImage: AssetImage(
                                 'assets/images/U-Charge_logo_w_color.png',
                               ),
-                            ),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              Container(
-                                child: Text(
-                                  'U-Charge',
-                                  textAlign: TextAlign.start,
-                                  style: TextStyle(
-                                    fontSize: 22.0,
-                                    color: LightColors.kDarkBlue,
-                                    fontWeight: FontWeight.w800,
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                child: Text(
-                                  'Keeping you connected',
-                                  textAlign: TextAlign.start,
-                                  style: TextStyle(
-                                    fontSize: 16.0,
-                                    color: Colors.black45,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          )
                         ],
                       ),
                     )
                   ]),
             ),
             Expanded(
+
               child: SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
@@ -127,35 +92,12 @@ class HomePage extends StatelessWidget {
                                           builder: (context) => LoginScreen()
                                         ));
                                       },
-
                                      child: const Text('Fazer Registo'),
                     ),
                 ),
                     Container(color: Colors.transparent,
                       padding: EdgeInsets.symmetric(
                           horizontal: 100.0, vertical: 30.0),
-                      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
@@ -219,29 +161,8 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(height: 15.0),
-                          TaskColumn(
-                            icon: Icons.alarm,
-                            iconBackgroundColor: LightColors.kRed,
-                            title: 'To Do',
-                            subtitle: '5 tasks now. 1 started',
-                          ),
-                          SizedBox(
-                            height: 15.0,
-                          ),
-                          TaskColumn(
-                            icon: Icons.blur_circular,
-                            iconBackgroundColor: LightColors.kDarkYellow,
-                            title: 'In Progress',
-                            subtitle: '1 tasks now. 1 started',
-                          ),
-                          SizedBox(height: 15.0),
-                          TaskColumn(
-                            icon: Icons.check_circle_outline,
-                            iconBackgroundColor: LightColors.kBlue,
-                            title: 'Done',
-                            subtitle: '18 tasks now. 13 started',
-                          ),
+
+
                         ],
                       ),
                     ),
@@ -252,42 +173,8 @@ class HomePage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          subheading('Active Projects'),
-                          SizedBox(height: 5.0),
-                          Row(
-                            children: <Widget>[
-                              ActiveProjectsCard(
-                                cardColor: LightColors.kGreen,
-                                loadingPercent: 0.25,
-                                title: 'Medical App',
-                                subtitle: '9 hours progress',
-                              ),
-                              SizedBox(width: 20.0),
-                              ActiveProjectsCard(
-                                cardColor: LightColors.kRed,
-                                loadingPercent: 0.6,
-                                title: 'Making History Notes',
-                                subtitle: '20 hours progress',
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: <Widget>[
-                              ActiveProjectsCard(
-                                cardColor: LightColors.kDarkYellow,
-                                loadingPercent: 0.45,
-                                title: 'Sports App',
-                                subtitle: '5 hours progress',
-                              ),
-                              SizedBox(width: 20.0),
-                              ActiveProjectsCard(
-                                cardColor: LightColors.kBlue,
-                                loadingPercent: 0.9,
-                                title: 'Online Flutter Course',
-                                subtitle: '23 hours progress',
-                              ),
-                            ],
-                          ),
+
+
                         ],
                       ),
                     ),
